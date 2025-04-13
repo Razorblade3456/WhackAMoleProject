@@ -13,7 +13,8 @@ function setGame() {
 
         let title = document.createElement("div");
         title.id = i.toString();
-        title.addEventListener("click", selectTile);
+        title.addEventListener("click", selectTile); //This handles both mouse clicks and screen taps on phone
+        title.addEventListener("touchstart", selectTile); // optional: touch for faster response on mobile
         document.getElementById("board").appendChild(title);
     }
 

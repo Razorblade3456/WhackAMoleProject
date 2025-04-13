@@ -38,3 +38,7 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+noTap {
+    touch-action: manipulation; /* helps prevent unintended zoom/tap behavior */ 
+}
