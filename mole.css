@@ -1,0 +1,40 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: blueviolet;
+    background: url("./EldenRingBG.jpg");
+    background-size: cover;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./SpaceBG.jpg");
+    background-size: cover;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+#board div {
+    /* board = 540px*540px so each tile shouldbe a third of width and height so we dicide into 3x3 tiles which is = 180px*180px per div*/
+    width: 180px;
+    height: 180px;
+    background-image: url("./Whirlpool.png");
+    background-size: cover;
+
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+    /* This line of code makes the images not draggable or highlatable */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
